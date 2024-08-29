@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".tablelayout.TableLayoutActivity">
+
+    <TableRow
+        android:id="@+id/tablerowID1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_span="4"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Student Details"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerowID2"
+        android:background="#1E875D"
+        >
+        <TextView
+            android:id="@+id/idID"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="ID"
+            android:textStyle="bold"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/lastNameID"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="Name"
+            android:textStyle="bold"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/gpaNameID"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="GPA"
+            android:textStyle="bold"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/dobID"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="D.O.B"
+            android:textStyle="bold"
+            android:layout_height="20dp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerowID3"
+        android:background="#C6CAC8"
+        >
+        <TextView
+            android:id="@+id/idID1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="101"
+            android:textStyle="bold"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/lastNameID1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="Karim Ahmed"
+            android:textStyle="bold"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/gpaNameID1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="3.95"
+            android:textStyle="bold"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/dobID1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="12.08.1987"
+            android:textStyle="bold"
+            android:layout_height="20dp"/>
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tablerowID4"
+        android:background="#C6CAC8"
+        >
+        <TextView
+            android:id="@+id/idID2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="102"
+            android:textStyle="bold"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/lastNameID2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="Jaber Khan"
+            android:textStyle="bold"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/gpaNameID2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="3.88"
+            android:textStyle="bold"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/dobID2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="16.07.1986"
+            android:textStyle="bold"
+            android:layout_height="20dp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableroeID4">
+        <Button
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_column="2"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:text="Clear"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_column="3"
+            android:layout_marginLeft="5dp"/>
+
+    </TableRow>
+
+
+</TableLayout>

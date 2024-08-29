@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#EA2D2D</color>
+    <color name="yellow">#E8D98B</color>
+
+    //CardView
+    <color name="background_color">#fcfcfc</color>
+    <color name="material_deep_purple">#673AB7</color>
+    <color name="material_pink">#E91E63</color>
+    <color name="material_green1">#B3D84C</color>
+    <color name="material_green">#4CAF50</color>
+    <color name="material_blue">#2196F3</color>
+
+    //Random
+    <color name="color">#F4B382</color>
+    <color name="color1">#387BB1</color>
+    <color name="color2">#83E89F</color>
+    <color name="color3">#706E75</color>
+    <color name="color4">#F3BF21</color>
+    <color name="color5">#605303</color>
+    <color name="color6">#B34440</color>
+    <color name="color7">#BA6C87</color>
+    <color name="color8">#128C8C</color>
+    <color name="color9">#5CB658</color>
+
+</resources>

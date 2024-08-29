@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".style.StyleActivity">
+
+    <TextView
+        android:id="@+id/txtView1"
+        android:text="Yo Tech 1"
+        style="@style/style1"/>
+
+    <TextView
+        android:id="@+id/txtView2"
+        android:text="Yo Tech 2"
+        style="@style/style2"/>
+
+    <TextView
+        android:id="@+id/txtView3"
+        android:text="Yo Tech 3"
+        style="@style/style2.style3"/>
+
+
+</LinearLayout>

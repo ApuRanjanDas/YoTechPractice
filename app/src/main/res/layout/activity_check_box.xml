@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".my_check_box.CheckBoxActivity">
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/checkbox_heading"/>
+
+    <CheckBox
+        android:id="@+id/cricketId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cricket_txt"
+        android:textSize="12sp"
+        android:textStyle="italic"/>
+    <CheckBox
+        android:id="@+id/footballId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/football_txt"
+        android:textSize="12sp"
+        android:textStyle="italic"/>
+    <CheckBox
+        android:id="@+id/carramId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carram_txt"
+        android:textSize="12sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/buttonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        />
+
+    <TextView
+        android:id="@+id/toastTxtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="15sp"/>
+
+</LinearLayout>

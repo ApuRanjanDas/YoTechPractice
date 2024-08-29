@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settingID"
+        android:title="Setting"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/sunmiID"
+        android:title="Sunmi"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/v8ID"
+        android:title="V8 Device"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/t80ID"
+        android:title="T80 Device"
+        app:showAsAction="never"/>
+
+</menu>

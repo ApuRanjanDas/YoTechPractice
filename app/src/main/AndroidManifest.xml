@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YoTechPractice"
+        tools:targetApi="31">
+        <activity
+            android:name=".NoteApp.NoteTakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".retrofitapicall.ApiNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".deviceinfo.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sqlite_database.login.LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sqlite_database.login.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sharedpreference.Project1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".sharedpreference.MyDairyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sharedpreference.BackgroundColorSettingDemo"
+            android:exported="false" />
+        <activity
+            android:name=".sqlite_database.SQLITEMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sharedpreference.SharedPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitylifecycle.ActivityLifeCycle"
+            android:exported="false" />
+        <activity
+            android:name=".cardview.VehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginactivity.LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".scrolltab.ScrollTabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginactivity.LogInSecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".htmlcontent.HTMLContent2"
+            android:exported="false" />
+        <activity
+            android:name=".htmlcontent.HTMLContentWebView"
+            android:exported="false" />
+        <activity
+            android:name=".intent.M"
+            android:exported="false" />
+        <activity
+            android:name=".style.StyleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logoonactionbar.LogoOnActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".logoonactionbar.BackButtonInActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".countryproject.CountryList"
+            android:exported="false" />
+        <activity
+            android:name=".tablelayout.TableLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.MainFragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".relativelayout.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".expandablelistview.ExpandableListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".autocompletetextview.AutoCompleteTextviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feedback.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feedback.FeedbackActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".sharebutton.ShareButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mediaplayer.MediaPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcomescreen.SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcomescreen.SplashHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".progressbar.ProgressbarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".grideview.GrideViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".gradiant.GradientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".listview.ListViewActivityForSearch"
+            android:exported="false"
+            android:theme="@style/Theme.YoTechPractice" />
+        <activity
+            android:name=".menuoption.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".listview.ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".listview.ListViewActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".NoteApp.NotesActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".onactivityforresult.FirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".framelayout.FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onactivityforresult.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".countryproject.ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".countryproject.CountryList">
+
+            <!-- Adding a back button in tool bar (It's alternative option) -->
+        </activity>
+        <activity
+            android:name=".spinner.SpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".spinner.DropDownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intent.A"
+            android:exported="false" />
+        <activity
+            android:name=".intent.B"
+            android:exported="false" />
+        <activity
+            android:name=".intent.FirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intent.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cardview.CardViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".videocontroller.VideoControllerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".zoomcontroler.ZoomControler"
+            android:exported="false" />
+        <activity
+            android:name=".weightlayout.WeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".font.FontActivity"
+            android:exported="false" />
+        <activity
+            android:name=".alartdialog.AlertDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".timepicker.ClockActivity"
+            android:exported="false" />
+        <activity
+            android:name=".timepicker.TimePickerDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".timepicker.TimePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".datepicker.DatePickerDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".datepicker.DatePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".webview.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".switchbutton.SwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".seekbar.SeekBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ratingbar.RatingBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".radio_button.RadioButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".my_check_box.CheckBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".image.ImageToast"
+            android:exported="false" />
+        <activity
+            android:name=".image.ImageViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".edittext.EditTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ToastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".showMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnClick"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HandlerActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

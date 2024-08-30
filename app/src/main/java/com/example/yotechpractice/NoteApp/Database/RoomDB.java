@@ -9,11 +9,11 @@ import androidx.room.RoomDatabase;
 
 import com.example.yotechpractice.NoteApp.Model.Notes;
 
-@Database(entities = Notes.class, version = 1, exportSchema = false)
+@Database(entities = Notes.class, version = 3, exportSchema = false)
 public abstract class RoomDB extends RoomDatabase {
 
     private static RoomDB database;
-    private static String DATABASE_NAME = "NoteApp";
+    private static String DATABASE_NAME ="NoteApp";
     public synchronized static RoomDB getInstance(Context context){
         if (database == null){
             database = Room.databaseBuilder(context.getApplicationContext(),
@@ -27,7 +27,7 @@ public abstract class RoomDB extends RoomDatabase {
         return database;
     }
 
-    public NoteDAO noteDao;
+    public abstract NoteDAO mainDAO();
 
 
 }

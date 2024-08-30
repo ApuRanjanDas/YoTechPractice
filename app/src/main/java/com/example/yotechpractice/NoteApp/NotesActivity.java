@@ -33,8 +33,8 @@ public class NotesActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     NoteListAdapter noteListAdapter;
     RoomDB database;
-    List<Notes> notes = new ArrayList<>();
-    //List<Notes> contactModelList = new ArrayList<>();
+    //List<Notes> notes = new ArrayList<>();
+    List<Notes> contactModelList = new ArrayList<>();
     FloatingActionButton fabBtn;
 
     @Override
@@ -49,9 +49,9 @@ public class NotesActivity extends AppCompatActivity {
 
         database = RoomDB.getInstance(this);
 
-        notes = database.noteDao.getAll();
+        contactModelList = database.mainDAO().getAll();
 
-        updateRecycle(notes);
+        updateRecycle(contactModelList);
 
         fabBtn.setOnClickListener(v -> {
             Intent intent = new Intent(NotesActivity.this, NoteTakeActivity.class);
@@ -67,9 +67,18 @@ public class NotesActivity extends AppCompatActivity {
             if (resultCode == Activity.RESULT_OK){
                 assert data != null;
                 Notes new_notes = (Notes) data.getSerializableExtra("note");
-                database.noteDao.insert(new_notes);
-                notes.clear();
-                notes.addAll(database.noteDao.getAll());
+                database.mainDAO().insert(new_notes);
+                contactModelList.clear();
+                contactModelList.addAll(database.mainDAO().getAll());
+                noteListAdapter.notifyDataSetChanged();
+            }
+        } else if (requestCode == 102){ //update and edit the notes on click on notes
+            if (resultCode == Activity.RESULT_OK){
+                assert data != null;
+                Notes new_notes = (Notes) data.getSerializableExtra("note");
+                database.mainDAO().update(new_notes.getID(), new_notes.getTitle(), new_notes.getNotes());
+                contactModelList.clear();
+                contactModelList.addAll(database.mainDAO().getAll());
                 noteListAdapter.notifyDataSetChanged();
             }
         }
@@ -86,6 +95,10 @@ public class NotesActivity extends AppCompatActivity {
     private final NotesClickListener notesClickListener = new NotesClickListener() {
         @Override
         public void onClick(Notes notes) {
+
+            Intent intent = new Intent(NotesActivity.this, NoteTakeActivity.class);
+            intent.putExtra("old_notes",notes);
+            startActivityForResult(intent, 102);
 
         }
 

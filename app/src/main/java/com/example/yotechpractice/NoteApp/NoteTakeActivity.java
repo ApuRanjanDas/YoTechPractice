@@ -1,5 +1,6 @@
 package com.example.yotechpractice.NoteApp;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,7 +28,7 @@ public class NoteTakeActivity extends AppCompatActivity {
     EditText titleEditText, noteEditText;
     ImageView saveBtn;
     Notes notes;
-
+    boolean isOldNotes = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,20 +36,37 @@ public class NoteTakeActivity extends AppCompatActivity {
 
         titleEditText = findViewById(R.id.titleEdt);
         noteEditText = findViewById(R.id.noteEdt);
+        saveBtn = findViewById(R.id.savebtn);
 
-        Log.d("error", "onCreate: oncraete 2");
+        notes = new Notes();
+
+        try {
+            notes = (Notes) getIntent().getSerializableExtra("old_notes");
+            titleEditText.setText(notes.getTitle());
+            noteEditText.setText(notes.getNotes());
+            isOldNotes = true;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        //Log.d("error", "onCreate: oncraete 2");
 
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (!isOldNotes){
+                    notes = new Notes();
+                }
+
                 String title = titleEditText.getText().toString();
                 String description = noteEditText.getText().toString();
 
                 if (description.isEmpty()){
-                    Toast.makeText(NoteTakeActivity.this,"Please enter the description!",Toast.LENGTH_SHORT);
+                    Toast.makeText(NoteTakeActivity.this,"Please enter the description!",Toast.LENGTH_SHORT).show();
                     return;
                 }
-                SimpleDateFormat format = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
+                @SuppressLint("SimpleDateFormat") SimpleDateFormat format = new SimpleDateFormat("E, d MMM yyyy HH:mm a");
                 Date date = new Date();
 
                 notes.setTitle(title);

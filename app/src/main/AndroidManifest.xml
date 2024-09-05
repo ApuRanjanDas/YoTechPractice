@@ -18,7 +18,7 @@
             android:name=".NoteApp.NoteTakeActivity"
             android:exported="false" />
         <activity
-            android:name=".retrofitapicall.ApiNoteActivity"
+            android:name=".NoteApp.NotesActivity"
             android:exported="false" />
         <activity
             android:name=".deviceinfo.MainActivity"
@@ -136,7 +136,7 @@
             android:name=".listview.ListViewActivity2"
             android:exported="false" />
         <activity
-            android:name=".NoteApp.NotesActivity"
+            android:name=".retrofitapicall.ApiNoteActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

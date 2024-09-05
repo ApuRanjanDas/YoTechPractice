@@ -29,7 +29,7 @@ public class MainFragmentActivity extends AppCompatActivity implements AdapterVi
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(this);
 
-    }
+    }//On Create
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

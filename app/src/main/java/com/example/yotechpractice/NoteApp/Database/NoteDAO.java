@@ -17,16 +17,14 @@ public interface NoteDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(Notes notes);
 
-    @Delete
-    void delete(Notes notes);
-
-    @Query("SELECT * FROM www ORDER BY id DESC")
+    @Query("SELECT * FROM notes ORDER BY id DESC")
     List<Notes> getAll();
 
-    @Query("UPDATE www SET title = :title, notes = :notes WHERE ID = :id")
+    @Query("UPDATE notes SET title = :title, notes = :notes WHERE ID = :id")
     void update(int id, String title, String notes);
 
-
+    @Delete
+    void delete(Notes notes);
 
 
 

@@ -57,7 +57,8 @@ public class NotesActivity extends AppCompatActivity {
             Intent intent = new Intent(NotesActivity.this, NoteTakeActivity.class);
             startActivityForResult(intent, 101);
         });
-    }
+
+    }//On Create
 
     @SuppressLint("NotifyDataSetChanged")
     @Override

@@ -15,10 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.yotechpractice.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
-
     private ProgressBar progressBar;
     int progress;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

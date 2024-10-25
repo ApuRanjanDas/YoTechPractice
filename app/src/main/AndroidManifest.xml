@@ -15,6 +15,9 @@
         android:theme="@style/Theme.YoTechPractice"
         tools:targetApi="31">
         <activity
+            android:name=".NoteApp.NotesActivity"
+            android:exported="false" />
+        <activity
             android:name=".NoteApp.NoteTakeActivity"
             android:exported="false" />
         <activity
@@ -136,7 +139,7 @@
             android:name=".listview.ListViewActivity2"
             android:exported="false" />
         <activity
-            android:name=".NoteApp.NotesActivity"
+            android:name=".delayed_time.DelayActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

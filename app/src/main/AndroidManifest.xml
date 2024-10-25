@@ -227,7 +227,7 @@
             android:name=".radio_button.RadioButtonActivity"
             android:exported="false" />
         <activity
-            android:name=".my_check_box.CheckBoxActivity"
+            android:name=".check_box.CheckBoxActivity"
             android:exported="false" />
         <activity
             android:name=".image.ImageToast"

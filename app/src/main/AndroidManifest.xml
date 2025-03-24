@@ -15,6 +15,9 @@
         android:theme="@style/Theme.YoTechPractice"
         tools:targetApi="31">
         <activity
+            android:name=".api_roomdb_mvvm.ApiActivity"
+            android:exported="false" />
+        <activity
             android:name=".NoteApp.NotesActivity"
             android:exported="false" />
         <activity

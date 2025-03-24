@@ -36,12 +36,9 @@ public class DropDownActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.sample_view,R.id.textviewSampleId,deviceIP);
         spinner.setAdapter(adapter);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String value = spinner.getSelectedItem().toString();
-                textView.setText(value);
-            }
+        button.setOnClickListener(v -> {
+            String value = spinner.getSelectedItem().toString();
+            textView.setText(value);
         });
 
     }
